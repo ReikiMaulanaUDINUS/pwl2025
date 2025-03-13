@@ -11,32 +11,8 @@ class Mahasiswa {
 
     function getData()
     {
-        $mhs = [
-            'nim' => $this->nim,
-            'nama' => $this->nama
-        ];
-        return $mhs;
-    }
-
-    function printData($data = null){
-        if (!is_null($data))
-        {
-            foreach ($data as $key => $value)
-            {
-                echo $value;
-            }            
-        } else {
-            echo "data kosong";
-        }
-    }
-
-    function dataMatkul($namaMatkul,$sks){
-        $data = [
-            'nim'=> $this->nim,
-            'namaMatkul'=> $namaMatkul,
-            'sks'=> $sks
-        ];
-
-        return $data;
+        return ['nim' => $this->nim,
+                'nama' => $this->nama];
     }
 }
+?>
